@@ -9,6 +9,7 @@ module.exports = {
 }
 
 function query(filterBy) {
+    console.log(filterBy)
     if (!filterBy) return Promise.resolve(toys)
     const filteredToys = _filterToys(toys, filterBy)
     return Promise.resolve(filteredToys)
