@@ -1,37 +1,33 @@
 [
   {
-    "_id": "SI7mN",
-    "name": "pokemon",
-    "price": "5001",
+    "name": "Car",
+    "price": 122,
     "labels": [
-      "Doll",
       "Battery Powered"
     ],
     "inStock": true,
-    "createdAt": 1678798016527
+    "_id": "d5NNk",
+    "createdAt": 1679310139840
   },
   {
-    "_id": "101",
-    "name": "baby car",
-    "price": "2002",
+    "name": "Doll",
+    "price": 123,
     "labels": [
       "Doll",
-      "Battery Powered",
       "Baby"
     ],
     "inStock": true,
-    "createdAt": 1631031801011
+    "_id": "abc123",
+    "createdAt": 1679310139840
   },
   {
-    "_id": "102",
-    "name": "Talking Edi",
-    "price": 40,
+    "name": "Pokemon",
+    "price": 500,
     "labels": [
-      "Doll",
-      "Battery Powered",
-      "Baby"
+      "Doll"
     ],
-    "inStock": false,
-    "createdAt": 1631031801011
+    "inStock": true,
+    "_id": "abc125",
+    "createdAt": 1679310139840
   }
 ]

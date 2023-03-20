@@ -49,6 +49,7 @@ function save(newToy) {
 }
 
 function _filterToys(toys, filterBy) {
+    console.log(filterBy);
     const { labels, sortBy } = filterBy
     const filteredToys = toys.filter(toy => {
 
@@ -56,7 +57,7 @@ function _filterToys(toys, filterBy) {
             const regex = new RegExp(filterBy.name, 'i')
             if (!regex.test(toy.name)) return false
         }
-
+        
         if (filterBy.inStock && !toy.inStock) {
             return false
         }
@@ -68,14 +69,15 @@ function _filterToys(toys, filterBy) {
         return true
     })
 
-    if (sortBy.name) {
+    if (sortBy === 'name') {
+        console.log('got here');
         toys = toys.sort((a, b) => a.name.localeCompare(b.name))
     }
     if (sortBy.price) {
-        toys = toys.sort((a, b) => (a.price - b.price) * sortBy.diff)
+        toys = toys.sort((a, b) => (a.price - b.price) * sort.diff)
     }
     if (sortBy.created) {
-        toys = toys.sort((a, b) => (a.createAt - b.createAt) * sortBy.diff)
+        toys = toys.sort((a, b) => (a.createAt - b.createAt) * sort.diff)
     }
 
     return filteredToys
